@@ -10,8 +10,14 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/eslint": "^1.13.0",
+    "@nuxt/ui": "^4.4.0",
+    "@nuxtjs/mdc": "^0.20.0",
+    "js-cookie": "^3.0.5",
     "nuxt": "^4.3.0",
+    "nuxt-yandex-metrika": "^2.0.2",
     "pm2": "^6.0.14",
+    "tailwindcss": "^4.1.18",
     "vue": "^3.5.27",
     "vue-router": "^4.6.4"
   }

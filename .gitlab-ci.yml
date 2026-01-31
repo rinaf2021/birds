@@ -1,0 +1,25 @@
+workflow:
+  rules:
+    - if: $CI_COMMIT_BRANCH == "master"
+      variables:
+        HOST: "rinaf.ru@rinaf.ru"
+        SSH_KEY: $SSH_KEY
+        ROOT_DIRECTORY: "/var/www/rinaf.ru/data/www/birds.rinaf.ru"
+
+before_script:
+  - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+  - eval $(ssh-agent -s)
+  - echo "$SSH_KEY" | tr -d '\r' | ssh-add -
+  - mkdir -p ~/.ssh
+  - echo "StrictHostKeyChecking no " > ~/.ssh/config
+  - chmod 700 ~/.ssh
+
+stages:
+  - deploy
+
+deploy-job:
+  rules:
+    - if: $CI_COMMIT_BRANCH == "master"
+  stage: deploy
+  script:
+    - ssh ${HOST} "cd ${ROOT_DIRECTORY}; git pull; ./deploy.sh;"

@@ -1,5 +1,42 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
-  devtools: { enabled: true }
+  modules: [
+    '@nuxt/eslint',
+    '@nuxt/ui',
+    'nuxt-yandex-metrika',
+    '@nuxtjs/mdc'
+  ],
+
+  devtools: {
+    enabled: true
+  },
+
+  css: ['~/assets/css/main.css'],
+
+  colorMode: {
+    preference: 'light'
+  },
+
+  routeRules: {
+    '/': { prerender: true }
+  },
+
+  compatibilityDate: '2025-01-15',
+
+  eslint: {
+    config: {
+      stylistic: {
+        commaDangle: 'never',
+        braceStyle: '1tbs'
+      }
+    }
+  },
+
+  ui: {
+    fonts: false
+  },
+
+  yandexMetrika: {
+    id: '105850434'
+  }
 })
