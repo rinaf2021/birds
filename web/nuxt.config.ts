@@ -17,9 +17,9 @@ export default defineNuxtConfig({
     preference: 'light'
   },
 
-  routeRules: {
-    '/': { prerender: true }
-  },
+  // routeRules: {
+  //  '/': { prerender: true }
+  // },
 
   compatibilityDate: '2025-01-15',
 
