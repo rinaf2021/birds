@@ -19,7 +19,7 @@ const items = ref([
 		title: 'Начали',
 		description: 'Проведены начальные работы над проектом',
 		content: `- Создан репозиторий
-- Настроен CI/CD
+- Настроен CI
 - Реализована заглушка для главной страницы
 - Подключена Я.Метрика
 - Подключен Я.Вебмастер
@@ -32,7 +32,7 @@ const items = ref([
 			{
 				name: 'Екатерина Ф.',
 				avatar: {
-					src: '/images/users/user_1.jpg'
+					src: '/upload/users/user_1.jpg'
 				},
 				size: '3xl' as UserProps['size']
 			}
