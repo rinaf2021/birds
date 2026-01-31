@@ -22,4 +22,4 @@ deploy-job:
     - if: $CI_COMMIT_BRANCH == "master"
   stage: deploy
   script:
-    - ssh ${HOST} "cd ${ROOT_DIRECTORY}; git pull; nvm use 24; ./deploy.sh;"
+    - ssh ${HOST} "cd ${ROOT_DIRECTORY}; nvm use 24; ./deploy.sh;"
