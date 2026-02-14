@@ -32,7 +32,10 @@ const yearString = computed(
 )
 
 const items = computed<NavigationMenuItem[]>(() => [
-
+  {
+    label: 'Исследования',
+    to: '/research/'
+  }
 ])
 
 onMounted(() => {

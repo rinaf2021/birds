@@ -36,6 +36,10 @@ export default defineNuxtConfig({
     fonts: false
   },
 
+  // image: {
+
+  // },
+
   yandexMetrika: {
     id: '105850434'
   }
