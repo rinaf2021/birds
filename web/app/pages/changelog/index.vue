@@ -14,6 +14,44 @@ useSeoMeta({
 
 const items = ref([
 	{
+		date: 'Jan 20, 2026',
+		badge: 'v0.3.0',
+		title: 'Раздел Видео',
+		description: '',
+		content: `- Сформировано сообщество в ВК Видео
+- сформирован шаблон вывода списка видео
+		`,
+		authors: [
+			{
+				name: 'Екатерина Ф.',
+				avatar: {
+					src: '/upload/users/user_1.jpg'
+				},
+				size: '3xl' as UserProps['size']
+			}
+		]
+	},
+	{
+		date: 'Jan 18, 2026',
+		badge: 'v0.2.0',
+		title: 'Раздел Исследования',
+		description: '',
+		content: `- Создан основной раздел
+- сформирован шаблон вывода списка исследований
+- сформирован шаблон вывода детальной страницы исследования
+- сформирована структура раздела
+		`,
+		authors: [
+			{
+				name: 'Екатерина Ф.',
+				avatar: {
+					src: '/upload/users/user_1.jpg'
+				},
+				size: '3xl' as UserProps['size']
+			}
+		]
+	},
+	{
 		date: 'Jan 19, 2026',
 		badge: 'v0.1.0',
 		title: 'Начали',

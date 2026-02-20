@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import type { NavigationMenuItem } from '@nuxt/ui';
 import Cookies from 'js-cookie';
 
 useHead({
@@ -32,6 +33,10 @@ const yearString = computed(
 )
 
 const items = computed<NavigationMenuItem[]>(() => [
+  {
+    label: 'Видео',
+    to: '/video/'
+  },
   {
     label: 'Исследования',
     to: '/research/'
@@ -74,7 +79,7 @@ function acceptCookie() {
           size="md"
           variant="subtle"
           @click.prevent="navigateTo('/changelog')"
-        >v0.1.0</u-badge>
+        >v0.3.0</u-badge>
       </template>
 
       <template #body>
@@ -105,13 +110,24 @@ function acceptCookie() {
         <u-button
           color="neutral"
           variant="link"
+          to="https://vkvideo.ru/@birds.space"
+          target="_blank"
+          :avatar="{
+            src: '/images/vk_video.svg',
+            class: 'rounded-none squircle'
+          }"
+          aria-label="Dzen"
+        ></u-button>
+        <!--u-button
+          color="neutral"
+          variant="link"
           to="https://rutube.ru/channel/13711100/"
           target="_blank"
           :avatar="{
             src: '/images/rutube.svg'
           }"
           aria-label="Rutube"
-        ></u-button>
+        ></u-button-->
         <u-button
           color="neutral"
           variant="link"
