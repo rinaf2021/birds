@@ -14,7 +14,25 @@ useSeoMeta({
 
 const items = ref([
 	{
-		date: 'Jan 20, 2026',
+		date: 'Feb 24, 2026',
+		badge: 'v0.3.1',
+		title: 'Соц сеть ВК',
+		description: '',
+		content: `- Добавила ссылку на сообщество ВК
+- Добавила новое видео на страницу
+		`,
+		authors: [
+			{
+				name: 'Екатерина Ф.',
+				avatar: {
+					src: '/upload/users/user_1.jpg'
+				},
+				size: '3xl' as UserProps['size']
+			}
+		]
+	},
+	{
+		date: 'Feb 20, 2026',
 		badge: 'v0.3.0',
 		title: 'Раздел Видео',
 		description: '',
@@ -32,7 +50,7 @@ const items = ref([
 		]
 	},
 	{
-		date: 'Jan 18, 2026',
+		date: 'Feb 18, 2026',
 		badge: 'v0.2.0',
 		title: 'Раздел Исследования',
 		description: '',

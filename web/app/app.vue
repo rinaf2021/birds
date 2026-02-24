@@ -79,7 +79,7 @@ function acceptCookie() {
           size="md"
           variant="subtle"
           @click.prevent="navigateTo('/changelog')"
-        >v0.3.0</u-badge>
+        >v0.3.1</u-badge>
       </template>
 
       <template #body>
