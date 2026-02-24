@@ -110,13 +110,24 @@ function acceptCookie() {
         <u-button
           color="neutral"
           variant="link"
+          to="https://vk.com/birds.space"
+          target="_blank"
+          :avatar="{
+            src: '/images/vk.svg',
+            class: 'rounded-none squircle'
+          }"
+          aria-label="VK"
+        ></u-button>
+        <u-button
+          color="neutral"
+          variant="link"
           to="https://vkvideo.ru/@birds.space"
           target="_blank"
           :avatar="{
             src: '/images/vk_video.svg',
             class: 'rounded-none squircle'
           }"
-          aria-label="Dzen"
+          aria-label="ВК Видео"
         ></u-button>
         <!--u-button
           color="neutral"

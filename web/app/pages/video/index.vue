@@ -14,6 +14,23 @@ useSeoMeta({
 
 const items = ref([
 	{
+		title: 'Итак, вопрос на миллион: кто целуется лучше?)',
+		description: '',
+		orientation: 'horizontal' as const,
+		class: 'lg:col-span-3',
+		user: {
+			name: 'Серый астрильд',
+			description: 'Estrilda Troglodytes',
+			avatar: {
+				src: '/upload/birds/estrilda_troglodytes.webp',
+				alt: 'Estrilda Troglodytes'
+			},
+			size: '3xl' as UserProps['size'],
+		},
+		reverse: true,
+		video: '<iframe src="https://vk.com/clip_ext.php?oid=-223368061&id=456239040" class="w-full h-[450px]" style="background-color: #fff" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+	},
+	{
 		title: 'Научился красиво уходить в заказ',
 		description: '',
 		orientation: 'horizontal' as const,
@@ -27,7 +44,8 @@ const items = ref([
 			},
 			size: '3xl' as UserProps['size'],
 		},
-		video: '<iframe src="https://vkvideo.ru/video_ext.php?oid=-223368061&id=456239039&hash=c649471c981d9471&hd=3" class="w-full h-[450px]" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+		reverse: false,
+		video: '<iframe src="https://vk.com/clip_ext.php?oid=-223368061&id=456239039" class="w-full h-[450px]" style="background-color: #fff" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
 	}
 ])
 </script>
