@@ -12,15 +12,29 @@ useSeoMeta({
 
 const items = [
 	{
+		title: 'Злаки для обустройства окружения',
+		description: 'Исследование направлено на выявление доступных для использования злаковых в вольерах  пертаных обитателей',
+		class: 'lg:col-span-1',
+		to: '/research/cereals-for-environmental-improvement/',
+		image: {
+			path: '/upload/research/cereals-for-environmental-improvement.webp',
+			width: 96,
+			height: 96
+		},
+		reverse: true,
+		orientation: 'vertical' as const
+	},
+	{
 		title: 'Базовая зерновая смесь для амадин и астрильдов',
 		description: 'Исследование направлено на выявление процентного соотношения зерновых компонентов для закрытия базовых потребностей в микроэлементах организма пернатых',
 		class: 'lg:col-span-2',
 		to: '/research/basic-grain-mix-for-amadine/',
 		image: {
-			path: '/upload/research/basic-grain-mix-for-amadine.jpg',
+			path: '/upload/research/basic-grain-mix-for-amadine.webp',
 			width: 96,
 			height: 96
 		},
+		reverse: true,
 		orientation: 'horizontal' as const
 	}
 ]

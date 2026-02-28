@@ -12,7 +12,7 @@ useSeoMeta({
   description,
   ogTitle: title,
   ogDescription: description,
-  ogImage: '/upload/research/basic-grain-mix-for-amadine.jpg'
+  ogImage: '/upload/research/basic-grain-mix-for-amadine.webp'
 })
 
 const uiProp = ref({
@@ -162,15 +162,6 @@ title: Fiory для экзотических птиц
 				size: '3xl' as UserProps['size']
 			}
 		]
-	}
-])
-
-const referenceGroup: Ref<PageLogosItem[]> = ref([
-	{
-		src:'/upload/users/user_1.jpg'
-	},
-	{
-		src:'/upload/users/user_1.jpg'
 	}
 ])
 
