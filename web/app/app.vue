@@ -79,7 +79,7 @@ function acceptCookie() {
           size="md"
           variant="subtle"
           @click.prevent="navigateTo('/changelog')"
-        >v0.3.1</u-badge>
+        >v0.3.2</u-badge>
       </template>
 
       <template #body>
@@ -107,7 +107,7 @@ function acceptCookie() {
         </u-link>
       </template>
       <template #right>
-        <u-button
+        <!--u-button
           color="neutral"
           variant="link"
           to="https://vk.com/birds.space"
@@ -128,7 +128,7 @@ function acceptCookie() {
             class: 'rounded-none squircle'
           }"
           aria-label="ВК Видео"
-        ></u-button>
+        ></u-button-->
         <!--u-button
           color="neutral"
           variant="link"

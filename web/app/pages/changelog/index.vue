@@ -14,6 +14,24 @@ useSeoMeta({
 
 const items = ref([
 	{
+		date: 'Mar 3, 2026',
+		badge: 'v0.3.2',
+		title: 'Видео через Yandex Cloud Video',
+		description: '',
+		content: `- Убрала ссылки на сообщенство в ВК
+- Добавила новое видео на страницу из облака
+		`,
+		authors: [
+			{
+				name: 'Екатерина Ф.',
+				avatar: {
+					src: '/upload/users/user_1.jpg'
+				},
+				size: '3xl' as UserProps['size']
+			}
+		]
+	},
+	{
 		date: 'Feb 24, 2026',
 		badge: 'v0.3.1',
 		title: 'Соц сеть ВК',
