@@ -106,6 +106,14 @@ function acceptCookie() {
           Разработчик Екатерина Ф. © {{ yearString }}
         </u-link>
       </template>
+      <template #default>
+        <u-link
+          to="/privacy/"
+          class="text-sm text-muted"
+        >
+          Политика конфиденциальности
+        </u-link>
+      </template>
       <template #right>
         <!--u-button
           color="neutral"
@@ -182,7 +190,7 @@ function acceptCookie() {
     </u-drawer>
     <u-modal
       fullscreen
-      title="Политка конфиденциальности"
+      :title="usePrivacyTitle()"
       v-model:open="openPrivacy"
     >
       <template #body>

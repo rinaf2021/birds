@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-const title = 'Политика конфиденциальности'
+const title = usePrivacyTitle()
 const description = ''
 
 useSeoMeta({
@@ -15,8 +15,8 @@ const policyContent = usePrivacy();
 </script>
 
 <template>
-    <u-page-header
-		title="Политика конфиденциальности"
+	<u-page-header
+		:title="title"
 	></u-page-header>
 	<u-page-body>
 		<m-d-c
