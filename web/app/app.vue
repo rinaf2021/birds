@@ -4,7 +4,9 @@ import Cookies from 'js-cookie';
 
 useHead({
   meta: [
-    { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    { name: 'yandex-verification', content: '9cf3c39677cf48a5' },
+    { name: 'yandex-verification', content: '9ae6d4e88278fa36' }
   ],
   link: [
     { rel: 'icon', href: '/favicon.ico' }
