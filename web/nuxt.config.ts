@@ -13,6 +13,8 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
+  sourcemap: { server: false, client: false },
+
   colorMode: {
     preference: 'light'
   },
