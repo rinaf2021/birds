@@ -1,14 +1,50 @@
 <script setup lang="ts">
-import { avatar } from '#build/ui';
 import type { BreadcrumbItem } from '@nuxt/ui';
 import { useVideoSpeciesLinks } from '~~/shared/videos';
 
-const title = 'Видео'
-const description = ''
+const route = useRoute();
 
-const { data: response } = await useFetch('/api/video');
+const species = route.params.species;
+
+const { data: response, error } = await useFetch(`/api/video/${species}`);
+
+if (error.value?.statusCode === 404) {
+  throw createError({
+    statusCode: 404,
+    statusMessage: 'Страница не найдена',
+    fatal: true // fatal: true обязателен, чтобы прервать рендеринг
+  })
+}
 
 const speciesList = useVideoSpeciesLinks();
+
+const title = computed(() => {
+	if(response.value && response.value.data) {
+		return response.value.data.meta.title;
+	}
+	return 'Видео';
+})
+
+const description = computed(() => {
+	if(response.value && response.value.data) {
+		return response.value.data.meta.description;
+	}
+	return '';
+})
+
+const image = computed(() => {
+	if(response.value && response.value.data) {
+		return response.value.data.meta.image;
+	}
+	return '';
+})
+
+const items = computed(() => {
+	if(response.value && response.value.data) {
+		return response.value.data.items;
+	}
+	return [];
+})
 
 const breadcrumbs: Ref<BreadcrumbItem[]> = ref([
 	{
@@ -18,29 +54,26 @@ const breadcrumbs: Ref<BreadcrumbItem[]> = ref([
 	{
 		label: 'Видео',
 		to: '/video/'
+	},
+	{
+		label: title,
+		to: `/video/${species}/`
 	}
 ])
-
-const items = computed(() => {
-	if(response.value && response.value.data) {
-		return response.value.data.items;
-	}
-	return [];
-})
 
 useSeoMeta({
   title,
   description,
   ogTitle: title,
   ogDescription: description,
-  ogImage: '/android-chrome-512x512.png'
+  ogImage: image
 })
 
 </script>
 
 <template>
 	<u-page-header
-		title="Видео"
+		:title="title"
 	>
 		<template #headline>
 			<u-breadcrumb :items="breadcrumbs"></u-breadcrumb>

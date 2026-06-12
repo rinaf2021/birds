@@ -14,6 +14,25 @@ useSeoMeta({
 
 const items = ref([
 	{
+		date: 'Jun 12, 2026',
+		badge: 'v0.4.0',
+		title: 'Расширение раздела Видео',
+		description: '',
+		content: `- Добавила роуты для подразделов
+- Добавила ссылки на подразделы
+- Сделала заглушки для апи методов
+		`,
+		authors: [
+			{
+				name: 'Екатерина Ф.',
+				avatar: {
+					src: '/upload/users/user_1.jpg'
+				},
+				size: '3xl' as UserProps['size']
+			}
+		]
+	},
+	{
 		date: 'Mar 3, 2026',
 		badge: 'v0.3.2',
 		title: 'Видео через Yandex Cloud Video',

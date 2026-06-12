@@ -44,5 +44,13 @@ export default defineNuxtConfig({
 
   yandexMetrika: {
     id: '105850434'
+  },
+
+  experimental: {
+    defaults: {
+      nuxtLink: {
+        trailingSlash: 'append'
+      }
+    }
   }
 })

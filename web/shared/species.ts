@@ -1,6 +1,7 @@
 import type { UserProps } from "@nuxt/ui";
 
 export const amadinaFasciata = {
+	id: 'amadina-fasciata',
 	name: 'Красногорлая амадина',
 	description: 'Amadina Fasciata',
 	avatar: {
@@ -13,6 +14,7 @@ export const amadinaFasciata = {
 export const amadinaFasciataTags = '#красногорлаяамадина #amadinafasciata';
 
 export const geopeliaCuneata = {
+	id: 'geopelia-cuneata',
 	name: 'Бриллиантовая горлица',
 	description: 'Geopelia cuneata',
 	avatar: {
@@ -25,6 +27,7 @@ export const geopeliaCuneata = {
 export const geopeliaCuneataTags = '#бриллиантоваягорлица #geopeliacuneata #diamondturtledove';
 
 export const estrildaTroglodytes = {
+	id: 'estrilda-troglodytes',
 	name: 'Серый астрильд',
 	description: 'Estrilda Troglodytes',
 	avatar: {
@@ -37,6 +40,7 @@ export const estrildaTroglodytes = {
 export const estrildaTroglodytesTags = '#серыйастрильд #estrildatroglodytes';
 
 export const estrildaMelpoda = {
+	id: 'estrilda-melpoda',
 	name: 'Оранжевощекий астрильд',
 	description: 'Estrilda Melpoda',
 	avatar: {
@@ -49,6 +53,7 @@ export const estrildaMelpoda = {
 export const estrildaMelpodaTags = '#оранжевощекийастрильд #estrildamelpoda';
 
 export const uraeginthusBengalus = {
+	id: 'uraeginthus-bengalus',
 	name: 'Красноухий астрильд',
 	description: 'Uraenginthus Bengalus',
 	avatar: {
@@ -61,6 +66,7 @@ export const uraeginthusBengalus = {
 export const uraeginthusBengalusTags = '#красноухийастрильд #uraeginthusbengalus';
 
 export const stizopteraBichenovii = {
+	id: 'stizoptera-bichenovii',
 	name: 'Кольчатый астрильд',
 	description: 'Stizoptera Bichenovii',
 	avatar: {
